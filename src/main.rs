@@ -1,4 +1,4 @@
 fn main() {
     let name = "John A";
-    println!("Hello, {:^20.30}!", name);
+    println!("Hello, {:^MinWidth$.MaxWidth$}!", name, MinWidth=20, MaxWidth=30);
 }
