@@ -1,4 +1,6 @@
 fn main() {
     let name = "John A";
-    println!("Hello, {:^MinWidth$.MaxWidth$}!", name, MinWidth=20, MaxWidth=30);
+    let min_width = 20;
+    let max_width =30;
+    println!("Hello, {:^MinWidth$.MaxWidth$}!", name, MinWidth=min_width, MaxWidth=max_width);
 }
