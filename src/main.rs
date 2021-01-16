@@ -1,6 +1,8 @@
-use std::env;
+use structopt::StructOpt;
+
+mod opt;
 
 fn main() {
-    let args: Vec<String> = env::args().collect();
-    println!("{:?}", args);
+    let opt = opt::Opt::from_args();
+    println!("{:?}", opt);
 }
